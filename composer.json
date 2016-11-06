@@ -1,0 +1,23 @@
+{
+    "name": "hobbiot/cacheable-auth-user",
+    "description": "cacheable Auth::user() for Laravel 5.3",
+    "keywords": ["laravel", "auth", "cache"],
+	"license": "No License",
+    "authors": [
+        {
+            "name": "HobbIoT",
+            "email": "dev@hobbiot.co.jp",
+            "homepage": "https://www.hobbiot.co.jp/"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": "5.3.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "HobbIoT\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
