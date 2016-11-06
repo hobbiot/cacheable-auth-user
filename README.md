@@ -45,3 +45,12 @@ In your `config/auth.php` change User Providers' driver. You can now use "__cach
 ],
 ```
 Administrator::class needs to extend Authenticatable (Illuminate\\Foundation\\Auth\\User)  and use trait Notifiable (Illuminate\\Notifications\\Notifiable), just like App\\User::class.
+
+### Supplementary Explanation
+* The cache is valid for 60 minutes.
+* The cache Key is _ModelCalssName_\_By\_Id\__id_ and _ModelCalssName_\_By\_Id\_Token_\__id_.
+* Using Eloquent _updated_ event listener to clear cache, need to use `model->save()`. When user update his name in profile page,
+ fire _updated_ event automatically, (listen event and) clear cache. After that reload from resources (database).
+
+  Laravel Manual said,
+>Note: When issuing a mass update via Eloquent, the _saved_ and _updated_ model events will not be fired for the updated models. This is because the models are never actually retrieved when issuing a mass update.
