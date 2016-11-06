@@ -2,7 +2,7 @@
     "name": "hobbiot/cacheable-auth-user",
     "description": "cacheable Auth::user() for Laravel 5.3",
     "keywords": ["laravel", "auth", "cache"],
-	"license": "MIT",
+    "license": "MIT",
     "authors": [
         {
             "name": "HobbIoT",
