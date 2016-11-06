@@ -1,5 +1,7 @@
 # cacheable-auth-user
-cached Auth::user() for Laravel 5.3
+[![Latest Stable Version](https://poser.pugx.org/hobbiot/cacheable-auth-user/v/stable)](https://packagist.org/packages/hobbiot/cacheable-auth-user) [![Total Downloads](https://poser.pugx.org/hobbiot/cacheable-auth-user/downloads)](https://packagist.org/packages/hobbiot/cacheable-auth-user) [![Latest Unstable Version](https://poser.pugx.org/hobbiot/cacheable-auth-user/v/unstable)](https://packagist.org/packages/hobbiot/cacheable-auth-user) [![License](https://poser.pugx.org/hobbiot/cacheable-auth-user/license)](https://packagist.org/packages/hobbiot/cacheable-auth-user)
+
+  Cacheable Auth::user() for Laravel 5.3.
 
 ## Installation
 Composer  
