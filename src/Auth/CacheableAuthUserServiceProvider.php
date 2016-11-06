@@ -17,9 +17,9 @@ class CacheableAuthUserServiceProvider extends ServiceProvider
         $this->app['auth']->provider('cacheableEloquent',
             function($app, $config) {
                 $config['model']::updated(function ($model) {
-                    CacheableUserProvider::clearCache($model);
+                    CacheableEloquentUserProvider::clearCache($model);
                 });
-                return new CacheableUserProvider($app['hash'], $config['model']);
+                return new CacheableEloquentUserProvider($app['hash'], $config['model']);
             }
         );
     }
