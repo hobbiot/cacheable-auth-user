@@ -48,7 +48,7 @@ Administrator::class needs to extend Authenticatable (Illuminate\\Foundation\\Au
 
 ### Supplementary Explanation
 * The cache is valid for 60 minutes.
-* The cache Key is _ModelCalssName_\_By\_Id\_id_ and _ModelCalssName_\_By\_Id\_Token_\_id_.
+* The cache Key is _ModelCalssName_\_By\_Id\__id_ and _ModelCalssName_\_By\_Id\_Token\__id_.
 * Using Eloquent _updated_ event listener to clear cache, need to use `model->save()`. When user update his name in profile page,
  fire _updated_ event automatically, (listen event and) clear cache. After that reload from resources (database).
 
