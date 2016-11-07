@@ -1,6 +1,6 @@
 {
     "name": "hobbiot/cacheable-auth-user",
-    "description": "cacheable Auth::user() for Laravel 5.3",
+    "description": "Cache Auth::user() for Laravel 5.3. This package add new driver to laravel.",
     "keywords": ["laravel", "auth", "cache"],
     "license": "MIT",
     "authors": [
