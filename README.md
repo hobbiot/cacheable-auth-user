@@ -21,12 +21,6 @@ In your `config/app.php` add `HobbIoT\Auth\CacheableAuthUserServiceProvider::cla
 ],
 ```
 
-If Lumen
-
-```php
-$app->register(HobbIoT\Auth\CacheableAuthUserServiceProvider::class);
-```
-
 #### auth.php
 In your `config/auth.php` change User Providers' driver. You can now use "__cacheableEloquent__".
 
